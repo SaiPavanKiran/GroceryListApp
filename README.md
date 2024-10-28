@@ -18,7 +18,7 @@ Byit! aims to help users make informed and budget-conscious shopping decisions w
 - **Admin:** (In progress) Admins will be able to update grocery details, add or remove items, manage customer support, and perform maintenance tasks within the app.
 - **Owner:** The owner can add or remove admins, manage permissions, and has complete control over app functionalities.
 
----
+--- 
 
 ## 📱 App Screenshots
 
