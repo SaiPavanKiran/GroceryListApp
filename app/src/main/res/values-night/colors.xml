@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Extra Colors-->
+    <color name ="light_card_color">#1F1F1F</color>
+    <color name = "cart_buttons_color">#575757</color>
+
+    <!--Star Color-->
+    <color name ="gold_color">#FFC107</color>
+
+    <!-- Alert Box Colors -->
+    <color name="image_tint_color">#80CBC4</color>
+    <color name="image_background_color">#37474F</color>
+    <color name="alert_box_background_color">#263238</color>
+    <color name="alert_text_color">#B2DFDB</color>
+    <color name="alert_yes_button_text_color">#FF8A80</color>
+    <color name="alert_yes_button_background_color">#4E342E</color>
+    <color name="alert_no_button_text_color">#80CBC4</color>
+    <color name="alert_no_button_background_color">#455A64</color>
+
+    <!-- SnackBar Colors -->
+    <color name="snack_bar_container_color">#37474F</color>
+    <color name="snack_bar_content_color">#ECEFF1</color>
+
+    <!-- Circular Progress Indicator Color-->
+    <color name="circular_progress_color">#80CBC4</color>
+
+    <!--Top Bar Colors-->
+    <color name="top_bar_color_1">#00796B</color>
+    <color name="top_bar_color_2">#004D40</color>
+
+    <color name="top_text_field_container">#263238</color>
+    <color name="top_text_field_text_colors">#B0BEC5</color>
+
+    <!-- Bottom bar colors -->
+    <color name="bottom_bar_container_color">#263238</color>
+    <color name="bottom_bar_content_color">#ECEFF1</color>
+    <color name="bottom_bar_selected_color">#80CBC4</color>
+
+
+    <!-- Home -->
+
+    <color name="home_banner_color">#2E3C43</color>
+    <color name="home_banner_text_color">#B0BEC5</color>
+
+    <color name="home_category_row_color">#37474F</color>
+    <color name="home_category_card_box_color">#455A64</color>
+    <color name="home_category_text_color">#ECEFF1</color>
+    <color name="home_category_ring_color">#80CBC4</color>
+
+    <color name="shortcuts_row_card_color">#455A64</color>
+    <color name="shortcuts_row_text_color">#ECEFF1</color>
+
+    <color name="ad_box_color">#37474F</color>
+    <color name="ad_box_text_color">#C8E6C9</color>
+
+    <color name="recommendations_main_card_color">#263238</color>
+    <color name="recommendations_smaller_card_image_background">#455A64</color>
+    <color name="recommendations_smaller_card_text_color">#ECEFF1</color>
+    <color name="see_more_background_color">#26A69A</color>
+    <color name="see_more_text_color">#FFFFFF</color>
+
+
+    <!-- Drop Down Menu Colors -->
+    <color name="drop_down_menu_text_field_background">#455A64</color>
+    <color name="dropdown_menu_background_color">#455A64</color>
+    <color name="dropdown_menu_text_color">#ECEFF1</color>
+
+    <!-- GroceryList Colors -->
+    <color name="grocery_card_background">#37474F</color>
+    <color name="grocery_card_border">#455A64</color>
+    <color name="grocery_image_background">#546E7A</color>
+    <color name="grocery_text_color">#ECEFF1</color>
+    <color name="grocery_button_background">#80CBC4</color>
+    <color name="grocery_button_text_color">#263238</color>
+    <color name="grocery_button_border">#00796B</color>
+    <color name="filter_buttons_background">#546E7A</color>
+    <color name="filter_selected_button_color">#80CBC4</color>
+    <color name="filter_title_box_background">#455A64</color>
+    <color name="filters_heading_color">#B0BEC5</color>
+    <color name="small_info_text_color">#B0BEC5</color>
+    <color name="filter_button_selected_text_color">#263238</color>
+    <color name="filter_button_unselected_text_color">#80CBC4</color>
+    <color name="filters_row_background_color">#455A64</color>
+
+    <!-- Cart Screen -->
+    <color name="cart_total_price_text_color">#ECEFF1</color>
+    <color name="cart_info_text_color">#B0BEC5</color>
+    <color name="cart_card_background_color">#37474F</color>
+    <color name="cart_checkbox_color">#80CBC4</color>
+    <color name="cart_pill_background_color">#455A64</color>
+    <color name="cart_pill_text_color">#B0BEC5</color>
+    <color name="cart_pill_border_color">#546E7A</color>
+    <color name="cart_pill_button_icon_color">#80CBC4</color>
+    <color name="cart_button_filled_background">#80CBC4</color>
+    <color name="cart_button_filled_text_color">#263238</color>
+    <color name="cart_button_outlined_border_color">#ECEFF1</color>
+    <color name="cart_button_outlined_text_color">#80CBC4</color>
+    <color name="cart_text_description_color">#ECEFF1</color>
+
+    <!--Analytics Screen-->
+    <color name="analytics_pie_chart_border_color">#37474F</color>
+    <color name="analytics_background_color">#263238</color>
+    <color name="analytics_sub_nav_background_color">#37474F</color>
+    <color name="analytics_sub_nav_text_color">#ECEFF1</color>
+    <color name="analytics_sub_nav_selected_indicator_color">#80CBC4</color>
+    <color name="analytics_small_info_text_color">#B0BEC5</color>
+    <color name="analytics_pie_chart_card_background">#37474F</color>
+    <color name="analytics_pie_chart_main_heading_color">#80CBC4</color>
+    <color name="analytics_pie_chart_label_text_color">#B0BEC5</color>
+    <color name="analytics_card_background">#455A64</color>
+    <color name="analytics_card_small_text_color">#B0BEC5</color>
+    <color name="analytics_card_main_text_color">#ECEFF1</color>
+
+    <!--Bills Screen -->
+    <color name="bills_background_color">#37474F</color>
+    <color name="upload_button_background_color">#455A64</color>
+    <color name="upload_button_icon_color">#80CBC4</color>
+    <color name="add_files_text_color">#ECEFF1</color>
+    <color name="bills_info_text_color">#B0BEC5</color>
+    <color name="storage_capacity_heading_color">#80CBC4</color>
+    <color name="progress_bar_color">#80CBC4</color>
+    <color name="progress_bar_border_color">#FFFFFF</color>
+    <color name="amount_used_text_color">#B0BEC5</color>
+    <color name="image_card_background_color">#455A64</color>
+    <color name="image_card_main_text_color">#ECEFF1</color>
+    <color name="image_card_medium_text_color">#B0BEC5</color>
+    <color name="image_card_small_text_color">#B0BEC5</color>
+    <color name="menu_option_icon_color">#80CBC4</color>
+    <color name="menu_options_box_color">#546E7A</color>
+    <color name="menu_option_text_color">#ECEFF1</color>
+    <!-- Upload Preview Screen -->
+    <color name="upload_preview_frame_color">#37474F</color>
+    <color name="upload_preview_heading_text_color">#ECEFF1</color>
+    <color name="upload_preview_tick_button_background_color">#A5D6A7</color>
+    <color name="upload_preview_tick_button_icon_color">#1B5E20</color>
+    <color name="upload_preview_cross_button_background_color">#EF9A9A</color>
+    <color name="upload_preview_cross_button_icon_color">#B71C1C</color>
+
+    <!-- Profile Colors-->
+    <color name="profile_pencil_icon_color">#B0BEC5</color>
+    <color name="profile_image_border_color">#546E7A</color>
+    <color name="profile_name_text_color">#ECEFF1</color>
+    <color name="profile_bio_text_color">#B0BEC5</color>
+    <color name="profile_contact_text_color">#CFD8DC</color>
+    <color name="profile_date_text_color">#B0BEC5</color>
+    <color name="profile_account_details_text_color">#80CBC4</color>
+    <color name="profile_account_text_color">#ECEFF1</color>
+    <color name="profile_logout_text_color">#F44336</color>
+    <color name="profile_guest_text_color">#80CBC4</color>
+
+
+    <!--Welcome Screen Colors-->
+
+    <!--Welcome Image Colors-->
+    <color name="soft_white_color">#263238</color>
+    <color name="teal_color">#80CBC4</color>
+
+    <color name="welcome_text_color">#ECEFF1</color>
+    <color name="tagline_text_color">#B0BEC5</color>
+    <color name="email_button_background">#80CBC4</color>
+    <color name="email_button_text_color">#263238</color>
+    <color name="google_button_background">#37474F</color>
+    <color name="google_button_text_color">#ECEFF1</color>
+    <color name="button_shadow_color">#455A64</color>
+    <color name="text_button_text_color">#80CBC4</color>
+
+    <!-- Login Screen And Sign-In Common Colors -->
+    <!-- Some Colors Taken From Welcome Screen -->
+    <color name="transparent_button_content_color">#80CBC4</color>
+    <color name="text_field_background_color">#37474F</color>
+    <color name="text_field_text_color">#ECEFF1</color>
+    <color name="text_field_placeholder_color">#78909C</color>
+
+</resources>
