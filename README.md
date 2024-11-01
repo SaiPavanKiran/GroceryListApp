@@ -119,7 +119,7 @@ The **Owner** holds complete rights to add/remove admins and manage app configur
     - Run the app by clicking the `Run` button or pressing `Shift + F10`.
       
 5. **Output APK**
-    - The output APK can be found at `[outputs/apk/debug/app-debug.apk](https://drive.google.com/file/d/1A5solGKksrjVHvlgsFETRdaWeQ-3yVaY/view?usp=drive_link)`. You can install this APK on your Android device to use the app.
+    - The output APK can be found at [outputs/apk/debug/app-debug.apk](https://drive.google.com/file/d/1A5solGKksrjVHvlgsFETRdaWeQ-3yVaY/view?usp=drive_link). You can install this APK on your Android device to use the app.
 
 
 ---
