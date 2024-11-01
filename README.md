@@ -2,7 +2,7 @@
 
 **Byit!** is a feature-rich grocery list app designed to help users efficiently plan, manage, and analyze their monthly grocery expenses. From tracking spending trends to viewing purchase history and uploading bills, Byit! offers a complete solution to streamline your grocery shopping experience.
 
-The **User App** is available now, and an **Admin App** with enhanced management capabilities is planned for future releases.
+The **User App** is available now, and an **Admin App** with enhanced management capabilities is available, allowing grocery updates but not yet resolving customer issues.
 
 ## 📲 Project Overview
 
@@ -15,7 +15,7 @@ Byit! aims to help users make informed and budget-conscious shopping decisions w
 
 ### App Roles
 - **User:** Each user can manage only their data, including adding items to the cart, uploading bills, and viewing their analytics.
-- **Admin:** (In progress) Admins will be able to update grocery details, add or remove items, manage customer support, and perform maintenance tasks within the app.
+- **Admin:** Admins can update grocery details, add or remove items, and perform maintenance tasks within the app, but customer support is not yet available.
 - **Owner:** The owner can add or remove admins, manage permissions, and has complete control over app functionalities.
 
 --- 
@@ -82,12 +82,11 @@ Byit! aims to help users make informed and budget-conscious shopping decisions w
 
 ---
 
-## 👨‍💼 Admin App Features (Planned)
+## 👨‍💼 Admin App Features
 
-The Admin App is under development and will include:
-- **Grocery Management:** Admins can add new items, update descriptions, or remove outdated items.
-- **Customer Support:** Admins can address user queries, ensuring user satisfaction.
-- **Reporting & Maintenance:** Admins can report app issues to the owner, manage data, and perform app maintenance.
+The Admin App enables:
+- **Grocery Management:** Admins can add new items, update descriptions, or remove outdated items. (Limited to fewer than 100 items currently)
+- **Reporting & Maintenance:** Admins can report app issues to the owner and perform app maintenance.
 
 The **Owner** holds complete rights to add/remove admins and manage app configurations.
 
@@ -95,12 +94,11 @@ The **Owner** holds complete rights to add/remove admins and manage app configur
 
 ## ⚠️ Known Issues
 
-- **Admin App Not Ready:** The Admin App is under development, so some functionalities, like grocery updates by admins, are currently unavailable.
-- **Limited Groceries:** At present, only a limited number of grocery items are available, but we aim to add more in future updates.
+- **Customer Support:** Customer support is not yet integrated within the Admin App.
+- **Limited Groceries:** At present, the grocery list contains fewer than 100 items, but more will be added in future updates.
 - **Performance Issues:** Some users may experience minor glitches or lags on certain devices, which we are actively working to optimize.
 
 ---
-
 ## 🛠️ Setup and Installation
 
 1. **Clone the Repository**  
@@ -108,7 +106,8 @@ The **Owner** holds complete rights to add/remove admins and manage app configur
    git clone https://github.com/your-username/byit-grocerylist-app.git
    cd byit-grocerylist-app
    ```
- 2. **Open in Android Studio**
+   
+ 1. **Open in Android Studio**
 	- Open the project in Android Studio.
 	  
  3. **Install Dependencies**
@@ -171,9 +170,9 @@ We encourage contributions from the community! Here's how you can contribute to 
 
 ## 🌍 Future Updates
 
-- **Admin App Release:** Introducing the Admin App to enable grocery management and customer support functionalities.
+- **Customer Support Integration:** Enable admins to address user queries in the Admin App.
 - **UI and Performance Improvements:** Aiming for a smoother, more responsive user interface with lag reduction.
-- **Enhanced Security:** Implementing encryption to secure user data and ensuring optimal data privacy.
+- **Enhanced Security:** Implementing encryption to secure user data and ensure optimal data privacy.
 - **Expanded Grocery Selection:** Adding more items to accommodate a broader range of grocery needs.
 - **Increased Storage:** Enhancing the bill storage limit based on future requirements.
 
