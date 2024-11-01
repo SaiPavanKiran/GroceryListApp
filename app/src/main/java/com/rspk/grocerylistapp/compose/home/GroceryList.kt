@@ -59,6 +59,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.rspk.grocerylistapp.R
 import com.rspk.grocerylistapp.common.composables.CustomDropDownTextField
+import com.rspk.grocerylistapp.common.composables.LoadingScreen
 import com.rspk.grocerylistapp.common.composables.SearchResultsItemDetailCard
 import com.rspk.grocerylistapp.common.composables.SmallBox
 import com.rspk.grocerylistapp.common.modifier.filterRowModifier
@@ -74,6 +75,7 @@ fun GroceryList(
     currentSearchList:List<String>,
     onCurrentItemsFilteringStringChange:(String) -> Unit,
     onSubListChanged:(List<String>) -> Unit = {} ,
+    loadingCondition:Boolean,
     homeViewModel: HomeViewModel = hiltViewModel()
 ) {
 
@@ -82,6 +84,7 @@ fun GroceryList(
 
     BackHandler {
         onCurrentItemsFilteringStringChange("")
+        onSubListChanged(emptyList())
     }
 
     LazyRow(
@@ -104,15 +107,18 @@ fun GroceryList(
             }
         )
     }
-
-    LazyColumn(
-        contentPadding = PaddingValues(vertical = dimensionResource(id = R.dimen.padding_30)),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        groceryList(
-            filteredList = filteredList,
-            homeViewModel = homeViewModel
-        )
+    if(loadingCondition) {
+        LazyColumn(
+            contentPadding = PaddingValues(vertical = dimensionResource(id = R.dimen.padding_30)),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            groceryList(
+                filteredList = filteredList,
+                homeViewModel = homeViewModel
+            )
+        }
+    }else{
+        LoadingScreen()
     }
 }
 

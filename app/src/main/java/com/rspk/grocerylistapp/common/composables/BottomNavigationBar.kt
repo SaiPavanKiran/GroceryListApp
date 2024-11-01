@@ -56,6 +56,7 @@ fun BottomNavigationBar(
     onCurrentItemsFilteringStringChange :(String) -> Unit,
     onProposedListChange : (AppProposedList) -> Unit,
     onSearchTermChange : (String) -> Unit,
+    onSubListChange : (List<String>) -> Unit,
     scope: CoroutineScope = rememberCoroutineScope()
 ) {
     NavigationBar(
@@ -78,6 +79,7 @@ fun BottomNavigationBar(
                             onSearchTermChange("")
                             onCurrentItemsFilteringStringChange("")
                             onProposedListChange(AppProposedList())
+                            onSubListChange(emptyList())
                         }
                     }
                 },

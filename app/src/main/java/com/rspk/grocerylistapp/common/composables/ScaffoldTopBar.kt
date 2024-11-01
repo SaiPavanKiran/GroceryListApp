@@ -131,7 +131,8 @@ fun CustomScaffold(
                     commonViewModel.currentItemsFilteringString = it
                 },
                 onSearchTermChange = { commonViewModel.searchTerm = it },
-                onProposedListChange = { commonViewModel.appProposedList = it }
+                onProposedListChange = { commonViewModel.appProposedList = it },
+                onSubListChange = { commonViewModel.subTypeList = it }
             )
         },
         modifier = Modifier.fillMaxSize()
@@ -179,20 +180,17 @@ fun ScaffoldContent(
             commonViewModel.searchedList?.isNotEmpty() == true && commonViewModel.searchedList?.get(
                 0
             )?.type == commonViewModel.currentItemsFilteringString.lowercase()
-        if (commonViewModel.boolean) {
-            GroceryList(
-                filteredList = commonViewModel.searchedList,
-                currentSearchList = commonViewModel.currentFilterItemsList,
-                onCurrentItemsFilteringStringChange = {
-                    commonViewModel.currentItemsFilteringString = it
-                },
-                onSubListChanged = {
-                    commonViewModel.subTypeList = it
-                }
-            )
-        } else {
-            LoadingScreen()
-        }
+        GroceryList(
+            loadingCondition = commonViewModel.boolean,
+            filteredList = commonViewModel.searchedList,
+            currentSearchList = commonViewModel.currentFilterItemsList,
+            onCurrentItemsFilteringStringChange = {
+                commonViewModel.currentItemsFilteringString = it
+            },
+            onSubListChanged = {
+                commonViewModel.subTypeList = it
+            }
+        )
     } else {
         content(
             { commonViewModel.currentItemsFilteringString = it },

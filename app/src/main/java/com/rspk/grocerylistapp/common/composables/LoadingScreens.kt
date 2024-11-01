@@ -43,7 +43,7 @@ fun LoadingScreen(
 ) {
     var isLoadingMore by rememberSaveable { mutableStateOf(true) }
     LaunchedEffect(Unit) {
-        delay(6000L)
+        delay(2000L)
         isLoadingMore = false
     }
     Column(
@@ -57,7 +57,7 @@ fun LoadingScreen(
             )
         }else{
             Text(
-                text = "SomeThing Went Wrong"
+                text = "Nothing To Show"
             )
         }
     }
