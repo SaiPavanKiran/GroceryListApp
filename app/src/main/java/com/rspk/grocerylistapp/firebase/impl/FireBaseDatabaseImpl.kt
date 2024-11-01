@@ -454,7 +454,7 @@ class FireBaseDatabaseImpl @Inject constructor(
                         data.value["star_count"] == query ||
                         data.value["avg_price"]?.substringAfter("₹")?.substringBefore("-₹") == query ||
                         data.value["avg_price"]?.substringAfter("-₹")?.substringBefore(" per") == query ||
-                        searchKeywords.any { it.replace(" ","").contains(query.replace(" ",""), ignoreCase = true) }
+                        searchKeywords.any { it.replace(" ","").contains(query, ignoreCase = true) }
                 }
                 val filteredGroceryItems = filteredData?.mapNotNull { filteredItem ->
                     GroceryItemDetails(
