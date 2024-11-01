@@ -437,6 +437,7 @@ class FireBaseDatabaseImpl @Inject constructor(
     override suspend fun getSearchResults(query: String): Flow<List<GroceryItemDetails>> =
         callbackFlow {
             try {
+                Log.d(TAG, "Query: $query")
                 val retrievedList = fireStore.collection(ADMIN)
                     .document(ADMIN_DOCUMENT_ID_FOR_USER_GROCERY_LIST)
                     .get()
@@ -444,7 +445,16 @@ class FireBaseDatabaseImpl @Inject constructor(
 
                 val outputData = retrievedList?.data as? Map<String, Map<String, String>>
                 val filteredData = outputData?.filter { data ->
-                    data.value["search_keywords"]?.split(",")?.contains(query.lowercase()) ?: false
+                    if(query.isEmpty() || query.isBlank()) return@filter false
+                    val searchKeywords = data.value["search_keywords"]?.split(",") ?: emptyList()
+                        data.key.contains(query, ignoreCase = true)||
+                        data.key.replace(" ","").contains(query.replace(" ",""), ignoreCase = true) ||
+                        data.value["type"]?.contains(query, ignoreCase = true) == true ||
+                        data.value["sub_type"]?.contains(query, ignoreCase = true) == true ||
+                        data.value["star_count"] == query ||
+                        data.value["avg_price"]?.substringAfter("₹")?.substringBefore("-₹") == query ||
+                        data.value["avg_price"]?.substringAfter("-₹")?.substringBefore(" per") == query ||
+                        searchKeywords.any { it.replace(" ","").contains(query, ignoreCase = true) }
                 }
                 val filteredGroceryItems = filteredData?.mapNotNull { filteredItem ->
                     GroceryItemDetails(

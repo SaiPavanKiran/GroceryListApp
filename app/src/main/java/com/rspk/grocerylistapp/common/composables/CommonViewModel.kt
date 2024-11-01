@@ -29,8 +29,13 @@ class CommonViewModel @Inject constructor(
 
     fun searchList(query:String){
         try {
-            launchCaching {
-                fireBaseDatabase.getSearchResults(query).collect{
+            launchCachingWithIoDispatcher {
+                val newQuery = query.trim()
+                    .split("\\s+".toRegex())
+                    .map { it.replace("[^A-Za-z0-9]".toRegex(), "") }
+                    .filter { it.isNotEmpty() }
+                    .joinToString(" ")
+                fireBaseDatabase.getSearchResults(newQuery).collect{
                     searchedList = it
                 }
             }

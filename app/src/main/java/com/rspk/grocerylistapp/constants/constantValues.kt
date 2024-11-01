@@ -32,67 +32,67 @@ val previousMonth = months_list[months_list.indexOf(month) - 1]
 
 val groceryCategories =
     listOf(
-        GroceryCategory(
-            "Fruits",
-            R.drawable.r,
-            subList = listOf("pome","citrus")
-        ),
-        GroceryCategory(
-            "Vegetables",
-            R.drawable.r__1_,
-            subList = listOf("alliums","leafy vegetables")
-        ),
-        GroceryCategory(
-            "Dairy",
-            R.drawable.milk_png_1000x752_9f08ee93_transparent,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Bakery",
-            R.drawable.pngtree_cute_breads_bakery_stationary_sticker_oil_painting_png_image_13165679,
-            subList = listOf("bread")
-        ),
-        GroceryCategory(
-            "Beverages",
-            R.drawable._9_598310_cold_drinks_2lt_cool_drinks_images_png,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Snacks",
-            R.drawable.snack,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Cleaning",
-            R.drawable.cleaning_items_ai_generated_free_png,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Nuts,Pulses",
-            R.drawable.lentil_3216,
-            subList = listOf("tree nuts")
-        ),
-        GroceryCategory(
-            "Spices",
-            R.drawable.pngtree_selection_of_spices_for_christmas_and_thanksgiving_png_image_13664384,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Flours",
-            R.drawable._8fe8f887b0948c02b18820763888e9d,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Pooja",
-            R.drawable.rathyatra_dhup_480x480,
-            subList = listOf()
-        ),
-        GroceryCategory(
-            "Other",
-            R.drawable.pngtree_grocery_png_image_8919443,
-            subList = listOf("fatty fish")
-        )
+    GroceryCategory(
+        "Fruits",
+        R.drawable.r,
+        subList = listOf("pome fruits", "citrus fruits", "berries", "stone fruits", "melons", "tropical fruits", "exotic fruits")
+    ),
+    GroceryCategory(
+        "Vegetables",
+        R.drawable.r__1_,
+        subList = listOf("alliums", "leafy vegetables", "root vegetables", "cruciferous vegetables", "marrow vegetables", "legumes", "gourds", "herbs")
+    ),
+    GroceryCategory(
+        "Dairy",
+        R.drawable.milk_png_1000x752_9f08ee93_transparent,
+        subList = listOf("milk products", "cheese varieties", "yogurts", "creams", "butters", "dairy alternatives")
+    ),
+    GroceryCategory(
+        "Bakery",
+        R.drawable.pngtree_cute_breads_bakery_stationary_sticker_oil_painting_png_image_13165679,
+        subList = listOf("bread varieties", "buns & rolls", "pastries", "muffins", "cakes", "pies & tarts", "cookies")
+    ),
+    GroceryCategory(
+        "Beverages",
+        R.drawable._9_598310_cold_drinks_2lt_cool_drinks_images_png,
+        subList = listOf("cool drinks", "sodas", "juices", "teas", "coffees", "smoothies", "energy drinks","water")
+    ),
+    GroceryCategory(
+        "Snacks",
+        R.drawable.snack,
+        subList = listOf("chips", "nuts & seeds", "popcorn", "fruit snacks", "granola bars", "pretzels", "candy", "cookies")
+    ),
+    GroceryCategory(
+        "Cleaning",
+        R.drawable.cleaning_items_ai_generated_free_png,
+        subList = listOf("surface cleaners", "dish cleaners", "laundry supplies", "glass cleaners", "bathroom cleaners", "disinfectants", "tools & accessories")
+    ),
+    GroceryCategory(
+        "Nuts,Pulses",
+        R.drawable.lentil_3216,
+        subList = listOf("tree nuts", "beans", "lentils", "peas", "soybeans", "chickpeas", "peanuts")
+    ),
+    GroceryCategory(
+        "Spices",
+        R.drawable.pngtree_selection_of_spices_for_christmas_and_thanksgiving_png_image_13664384,
+        subList = listOf("ground spices", "whole spices", "herbs & seasonings", "spice mixes", "pepper varieties", "curry blends", "ginger & garlic")
+    ),
+    GroceryCategory(
+        "Flours",
+        R.drawable._8fe8f887b0948c02b18820763888e9d,
+        subList = listOf("wheat flours", "gluten-free flours", "nut flours", "corn flours", "rice flours", "specialty flours")
+    ),
+    GroceryCategory(
+        "Pooja",
+        R.drawable.rathyatra_dhup_480x480,
+        subList = listOf("incense", "ghee", "flowers", "camphor", "puja powders", "sacred threads", "offerings", "holy water")
+    ),
+    GroceryCategory(
+        "Other",
+        R.drawable.pngtree_grocery_png_image_8919443,
+        subList = listOf("fatty fish", "cooking oils", "vinegar", "pasta", "rice", "sauces", "dressings", "soup mixes")
     )
+)
 
 
 val pagerImages = listOf(

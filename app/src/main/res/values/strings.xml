@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">bYit!</string>
+    <string name="app_name">Byit!</string>
     <string name="email">EMAIL</string>
     <string name="password">PASSWORD</string>
-    <string name="owner_token">CAK3GsuqCkfkegKkSSUvao2jnpC3</string>
     <string name="generic_error">An Internal Error Occur</string>
     <string name="google_web_client">316249604660-c60583cki5o8aabonjggtk1tosmuuvs1.apps.googleusercontent.com</string>
     <string name="guest_image_url">https://firebasestorage.googleapis.com/v0/b/grocery-list-app-7692d.appspot.com/o/user_profile_pics%2Fguest.png?alt=media&amp;token=440b3eb7-fbc5-431f-8664-c85622c5fdac</string>
